@@ -63,7 +63,7 @@ baris 151:
 p->start_ticks = ticks;
 
 ```
-baris 562-574:
+baris 566-571:
 ```C
 #elif defined(CS333_P1)
 void
