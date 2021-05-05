@@ -69,12 +69,12 @@ baris 562-574:
 void
 procdumpP1(struct proc *p, char *state_string)
 {
-  #ifdef C5333_P1
-  int eim = ticks - p->start_ticks;
-  int es = eim/ 1000;
-  int me = eim % 1000;
-  cprintf("%d\t%s\t%d.%d\t%s\t%d\t", p->pid, p->name, es, me, state_string, p->sz);
-  #endif// C5333_P1
+  #ifdef CS333_P1
+  int elapsed_in_ms = ticks - p->start_ticks;
+  int elapsed_sec = elapsed_in_ms / 1000;
+  int modulo_elapsed = elapsed_in_ms % 1000;
+  cprintf("%d\t%s\t%d.%d\t%s\t%d\t", p->pid, p->name, elapsed_sec, modulo_elapsed, state_string, p->sz);
+  #endif // CS333_P1
   return;
 }
 #endif
