@@ -20,17 +20,18 @@ baris 27:
 #define SYS_date    SYS_halt+1
 ```
 ## syscall.c
-baris 141-143:
+baris 139-141:
 ```C
 #ifdef CS333_P1
 [SYS_date]    sys_date,
 #endif // CS333_P1
 ```
-baris 186-188:
+baris 182-185:
 ```C
 #ifdef PRINT_SYSCALLS
-        cprintf("%s -> %d\n", syscallnames[num], curproc->tf->eax);
-    #endif // PRINT_SYSCALLS
+    cprintf("%s -> %d\n",
+            syscallnames[num], curproc->tf->eax);
+    #endif // CS333_P1 and PRINT_SYSCALLS
 ```
 ## sysproc.c
 baris 101-113:
