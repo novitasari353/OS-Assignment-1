@@ -1,5 +1,8 @@
 # Code Modification Report
-
+## Makefile
+```C
+CS333_PROJECT ?= 2
+```
 ## user.h
 baris 31-39:
 ```C
