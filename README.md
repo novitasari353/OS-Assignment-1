@@ -1,4 +1,4 @@
-# OS-Assignment
+# OS-Assignment project 2
 - NIM: 1313618009
 - Nama: Novitasari
 - Angkatan: Ilmu Komputer 2018
